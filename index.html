@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Search / Location Card -->
+    <div class="search-card">
+      <input type="text" id="cityInput" placeholder="Enter city">
+      <button id="getWeatherBtn"><i class="fas fa-search"></i></button>
+    </div>
+    
+    <!-- Weather Info Card -->
+    <div class="weather-card" id="weatherCard">
+      <div class="weather-icon">
+        <i class="fas fa-cloud-sun"></i>
+      </div>
+      <h2 id="cityName">City Name</h2>
+      <p id="temperature">-- °C</p>
+      <p id="description">--</p>
+      <div class="weather-details">
+        <p id="humidity"><i class="fas fa-tint"></i> --%</p>
+        <p id="wind"><i class="fas fa-wind"></i> -- m/s</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
